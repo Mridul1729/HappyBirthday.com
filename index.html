@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#h{font-family : cursive;
+font-size : 50px ;}
+body{background-color : black ; color : white;}
+</style>
+<title>chandrayaan-3 Landing</title>
+</head>
+<body>
+<p id="h"></p>
+<script>
+var countDownDate = new Date("August 23, 2023 18:04:00").getTime();
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var timeleft = countDownDate - now;
+  
+  var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    
+  document.getElementById("h").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s " + "left in landing of chandrayaan-3";
+    if (timeleft < 0) {
+    clearInterval(x);
+    document.getElementById("h").innerHTML = "<a href = 'https://www.youtube.com/live/DLA_64tz8Ss?feature=share'>Click This</a>"
+  }
+}, 1000);
+
+</script>
+
+</body>
+</html>
