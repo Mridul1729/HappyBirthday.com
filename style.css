@@ -15,6 +15,7 @@ p{
 }
 #countdown{
     top: 100px;
+    display: none;
 }
 #days{
     top: 0px;
