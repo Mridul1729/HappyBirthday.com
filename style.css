@@ -13,9 +13,6 @@ p{
     position: absolute;
     font-size: xx-large;
 }
-#countdown{
-    display: none;
-}
 #days{
     top: 0px;
     left: 0px;
