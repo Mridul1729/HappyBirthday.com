@@ -16,12 +16,15 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.queryselector(".d").innerHTML = days ;
+  document.queryselector(".h").innerHTML = hours ;
+  document.queryselector(".m").innerHTML = minutes ;
+  document.queryselector(".s").innerHTML = seconds ;
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.queryselector(".timer").style.display = "none";
+    document.queryselector(".text").innerHTML = "Happy Birthday My Cute & ______ Friend 😁😁"
   }
 }, 1000);
