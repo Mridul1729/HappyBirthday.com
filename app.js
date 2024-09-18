@@ -13,6 +13,7 @@ var x = setInterval(function() {
         clearInterval(x);
         document.getElementById("count").style.display = "none";
         document.getElementById("text").innerText = "Happy Birthday My Cute & ______ Friend 😁😁";
+        document.title = "Happy Birthday";
     }
 
     document.getElementById('day').innerText = days ;
